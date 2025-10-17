@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Base{
+	public:
+		Base()
+		{
+			cout<<"Base Constructor is called"<<endl;
+		}
+		~Base()
+		{
+			cout<<"Base Destructor is Called"<<endl;
+		}
+};
+class Derived:public Base{
+	public:
+		Derived()
+		{
+				cout<<"Derived constructor is called"<<endl;
+		}
+		~Derived()
+		{
+			cout<<"Derived Destructor is called"<<endl;
+		}
+};
+int main()
+{
+	cout<<"object is being created"<<endl;
+	Derived obj;
+	cout<<"object is created"<<endl;
+	cout<<"Existing main memory"<<endl;
+	return 0;
+}
